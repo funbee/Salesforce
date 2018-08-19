@@ -1,0 +1,5 @@
+<apex:component >
+    <p>
+        Bug Spray, Bear Repellant, Goat Food.
+    </p>
+</apex:component>

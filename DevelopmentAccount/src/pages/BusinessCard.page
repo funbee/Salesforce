@@ -1,0 +1,32 @@
+<apex:page controller="BusinessCardController">
+  <apex:form >
+  <apex:pageblock >
+      <apex:pageblockSection title="My Business Card" collapsible="no" columns="1">
+          <apex:pageBlockSectionItem >
+              <apex:outputlabel >First name</apex:outputlabel>
+              <apex:outputText value="{!$User.FirstName}"/>
+          </apex:pageBlockSectionItem>
+          <apex:pageblockSectionItem >
+              <apex:outputlabel >Last name</apex:outputlabel>
+              <apex:outputText value="{!$User.LastName}"/>
+          </apex:pageblockSectionItem>
+          <apex:pageblockSectionItem >
+              <apex:outputlabel >Email</apex:outputlabel>
+              <apex:outputText value="{!$User.Email}"/>
+          </apex:pageblockSectionItem>
+          <apex:pageBlockSectionItem >
+              <apex:outputLabel >Phone</apex:outputLabel>
+              <apex:outputText value="{!$User.Phone}"/>
+          </apex:pageblockSectionItem>
+          <apex:pageBlockSectionItem >
+              <apex:outputLabel >Title</apex:outputLabel>
+              <apex:outputText value="{!$User.Title}"/>
+          </apex:pageBlockSectionItem>
+      </apex:pageblockSection>
+      
+       <apex:pageBlockSection title="Send Business Card">
+          <apex:inputText label="Email" title="Email" value="{!email}"/>
+      </apex:pageBlockSection>
+    </apex:pageblock>
+  </apex:form>
+</apex:page>
